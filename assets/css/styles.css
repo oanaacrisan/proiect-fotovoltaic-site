@@ -77,22 +77,44 @@ a {
 }
 
 .brand-logos {
-  gap: 18px;
+  gap: 14px;
   flex: 0 0 auto;
-  max-width: 340px;
+  max-width: 520px;
   overflow: hidden;
 }
 
 .brand-logos img {
   display: block;
   width: auto;
-  max-width: 220px;
-  height: 46px;
+  max-width: 128px;
+  height: 42px;
   object-fit: contain;
 }
 
 .brand-logos img:last-child {
-  max-width: 68px;
+  max-width: 128px;
+}
+
+.brand-logos > img:first-child {
+  max-width: 48px;
+}
+
+.fm-mark {
+  display: grid;
+  gap: 2px;
+  justify-items: center;
+  color: var(--blue-dark);
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.fm-mark img {
+  max-width: 150px;
+  height: 28px;
+}
+
+.fm-mark span {
+  line-height: 1;
 }
 
 /* Guard against stale cached markup from the removed logo strip. */
@@ -470,6 +492,133 @@ a {
   color: var(--gray-700);
 }
 
+.timeline-list {
+  display: grid;
+  gap: 14px;
+  padding: 0;
+  margin: 0;
+  counter-reset: activity;
+  list-style: none;
+}
+
+.timeline-list li {
+  position: relative;
+  min-height: 72px;
+  padding: 20px 20px 20px 72px;
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.timeline-list li::before {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  color: var(--white);
+  background: var(--green);
+  border-radius: 50%;
+  counter-increment: activity;
+  content: counter(activity);
+  font-weight: 800;
+}
+
+.indicator-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.indicator-grid article {
+  padding: 22px;
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.indicator-grid span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 4px 8px;
+  color: var(--green-dark);
+  background: #eaf7ef;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.indicator-grid strong {
+  display: block;
+  color: var(--blue-dark);
+  font-size: 1.15rem;
+}
+
+.indicator-grid p {
+  margin: 10px 0 0;
+  color: var(--gray-700);
+  font-size: 0.94rem;
+}
+
+.announcement-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 28px;
+  align-items: start;
+}
+
+.announcement-card,
+.announcement-side {
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.announcement-card {
+  padding: 34px;
+}
+
+.announcement-card h2,
+.announcement-side h3 {
+  margin: 0 0 18px;
+  color: var(--blue-dark);
+}
+
+.announcement-card p {
+  color: var(--gray-700);
+}
+
+.announcement-side {
+  padding: 28px;
+}
+
+.announcement-side dl {
+  margin: 0;
+}
+
+.announcement-side dt {
+  margin-top: 16px;
+  color: var(--gray-700);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.announcement-side dt:first-of-type {
+  margin-top: 0;
+}
+
+.announcement-side dd {
+  margin: 5px 0 0;
+  color: var(--blue-dark);
+  font-weight: 800;
+}
+
 .summary-box dl,
 .funding-card dl {
   margin: 0;
@@ -621,6 +770,11 @@ a {
   color: rgba(255, 255, 255, 0.82);
 }
 
+.site-footer .funding-note {
+  color: var(--white);
+  font-weight: 800;
+}
+
 .site-footer nav {
   display: flex;
   flex-wrap: wrap;
@@ -673,6 +827,8 @@ a {
   .two-column,
   .funding-overview,
   .funding-facts,
+  .indicator-grid,
+  .announcement-layout,
   .funding-layout,
   .contact-layout {
     grid-template-columns: 1fr 1fr;
@@ -696,16 +852,29 @@ a {
 
   .brand-logos {
     gap: 10px;
-    max-width: 210px;
+    max-width: 270px;
   }
 
   .brand-logos img {
-    max-width: 136px;
-    height: 34px;
+    max-width: 82px;
+    height: 30px;
   }
 
   .brand-logos img:last-child {
-    max-width: 42px;
+    max-width: 82px;
+  }
+
+  .brand-logos > img:first-child {
+    max-width: 34px;
+  }
+
+  .fm-mark img {
+    max-width: 96px;
+    height: 22px;
+  }
+
+  .fm-mark span {
+    display: none;
   }
 
   .hero {
@@ -742,6 +911,8 @@ a {
   .two-column,
   .funding-overview,
   .funding-facts,
+  .indicator-grid,
+  .announcement-layout,
   .funding-layout,
   .contact-layout,
   .gallery-grid {

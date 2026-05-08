@@ -13,6 +13,9 @@
     <loc>https://[DOMENIU-SITE]/finantare.html</loc>
   </url>
   <url>
+    <loc>https://[DOMENIU-SITE]/anunt-demarare.html</loc>
+  </url>
+  <url>
     <loc>https://[DOMENIU-SITE]/contact.html</loc>
   </url>
 </urlset>

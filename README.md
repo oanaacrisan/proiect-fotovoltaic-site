@@ -17,6 +17,7 @@ Site de prezentare pentru un proiect cu fonduri europene privind instalarea de p
 ├── despre-proiect.html
 ├── obiective.html
 ├── finantare.html
+├── anunt-demarare.html
 ├── contact.html
 ├── robots.txt
 ├── sitemap.xml
