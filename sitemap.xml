@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://[DOMENIU-SITE]/</loc>
+    <loc>https://oct-sunenergy.vercel.app/</loc>
   </url>
   <url>
-    <loc>https://[DOMENIU-SITE]/despre-proiect.html</loc>
+    <loc>https://oct-sunenergy.vercel.app/despre-proiect.html</loc>
   </url>
   <url>
-    <loc>https://[DOMENIU-SITE]/obiective.html</loc>
+    <loc>https://oct-sunenergy.vercel.app/obiective.html</loc>
   </url>
   <url>
-    <loc>https://[DOMENIU-SITE]/finantare.html</loc>
+    <loc>https://oct-sunenergy.vercel.app/finantare.html</loc>
   </url>
   <url>
-    <loc>https://[DOMENIU-SITE]/anunt-demarare.html</loc>
+    <loc>https://oct-sunenergy.vercel.app/anunt-demarare.html</loc>
   </url>
   <url>
-    <loc>https://[DOMENIU-SITE]/contact.html</loc>
+    <loc>https://oct-sunenergy.vercel.app/contact.html</loc>
   </url>
 </urlset>

@@ -44,7 +44,7 @@ Varianta recomandata in VS Code:
 
 ## Ce trebuie completat inainte de publicare
 
-- `[DOMENIU-SITE]` in `robots.txt` si `sitemap.xml`
+- Domeniul actual folosit in `robots.txt` si `sitemap.xml`: `https://oct-sunenergy.vercel.app`
 - Confirmarea finala ca logo-urile UE si Guvernul Romaniei sunt acceptate de ghidul programului exact
 
 ## Publicare pe GitHub

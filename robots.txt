@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://[DOMENIU-SITE]/sitemap.xml
+Sitemap: https://oct-sunenergy.vercel.app/sitemap.xml
