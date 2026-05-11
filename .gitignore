@@ -3,3 +3,5 @@ Thumbs.db
 .vscode/
 node_modules/
 dist/
+image*.htm
+comunicat-fonduri-*.pdf
